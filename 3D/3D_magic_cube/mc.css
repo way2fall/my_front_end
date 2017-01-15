@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+#magic_cube {
+    -webkit-perspective: 800px;
+    -webkit-animation-name: animation;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 3s;
+	margin: 100px auto auto 100px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 80px 80px 0;
+}
+
+#magic_cube>div {
+    position: absolute;
+}
+
+
+#red div span {
+    width: 80px;
+    height: 80px;
+    background: red;
+    /*margin: 1px;*/
+    /*padding: 2px;*/
+    display: inline-block;
+    border-radius: 9px;
+}
+
+#orange div span {
+    width: 80px;
+    height: 80px;
+    background: orange;
+    /*margin: 1px;*/
+    /*padding: 2px;*/
+    display: inline-block;
+    border-radius: 9px;
+}
+
+#aqua div span {
+    width: 80px;
+    height: 80px;
+    background: aqua;
+    /*margin: 1px;*/
+    /*padding: 2px;*/
+    display: inline-block;
+    border-radius: 9px;
+}
+
+#blue div span {
+    width: 80px;
+    height: 80px;
+    background: blue;
+    /*margin: 1px;*/
+    /*padding: 2px;*/
+    display: inline-block;
+    border-radius: 9px;
+}
+
+#green div span {
+    width: 80px;
+    height: 80px;
+    background: green;
+    /*margin: 1px;*/
+    /*padding: 2px;*/
+    display: inline-block;
+    border-radius: 9px;
+}
+
+#yellow div span {
+    width: 80px;
+    height: 80px;
+    background: yellow;
+    /*margin: 1px;*/
+    /*padding: 2px;*/
+    display: inline-block;
+    border-radius: 9px;
+}
+
+
+#yellow {
+    -webkit-transform: translateZ(130px);
+}
+
+#red {
+    -webkit-transform: translateZ(-130px);
+}
+
+#green {
+    -webkit-transform: translateY(130px) rotateX(90deg);
+}
+
+#aqua {
+    -webkit-transform: translateX(130px) rotateY(90deg);
+}
+
+#blue {
+    -webkit-transform: translateY(-130px) rotateX(90deg);
+}
+
+#orange {
+    -webkit-transform: translateX(-130px) rotateY(90deg);
+}
+
+@-webkit-keyframes animation{
+	from,to{}
+	16%{-webkit-transform:rotateY(-90deg);}
+	33%{-webkit-transform:rotateY(-90deg) rotateZ(135deg);}
+	50%{-webkit-transform:rotateY(225deg) rotateZ(225deg);}
+	66%{-webkit-transform:rotateY(135deg) rotateZ(135deg);}
+	83%{-webkit-transform:rotateY(135deg);}
+}
+/*@-webkit-keyframes animation{
+	from{-webkit-transform:rotateY(0deg);}
+	50%{-webkit-transform:rotateY(360deg);}
+	to{-webkit-transform:rotateY(0deg);}
+	
+}*/

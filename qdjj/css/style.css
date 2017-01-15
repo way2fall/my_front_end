@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin-left: 40px;
+}
+
+.right {
+    float: right;
+    margin-right: 40px;
+}
+
+.right a {
+    display: inline-block;
+    margin: auto 5px;
+    color: #FF0099;
+}
+
+.star,
+.red {
+    color: red;
+}
+
+.title2_bg {
+    background-color: #EEEEEE;
+}
+
+.title2 {
+    color: #003399;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+body {
+    background-color: #096B89;
+    border-radius: 10px;
+}
+
+.wrapper {
+    margin: 20px auto;
+    background-color: white;
+    font-size: 0.8em;
+    border-radius: 20px;
+    width: 800px;
+}
+
+caption {
+    margin-bottom: 25px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 710px;
+    margin: auto;
+}
+
+table td {
+    border: 1px solid #ccc;
+    width: 120px;
+    height: 40px;
+}
+
+label {
+    float: right;
+}
+
+.more_desc {
+    color: blue;
+}
+
+p,
+textarea {
+    margin: 5px;
+}
+
+textarea{
+    width: 300px;
+    height: 100px;
+}
+
+input,
+select {
+    margin: 5px;
+}
+
+.submit {
+    width: 80px;
+    margin: auto;
+    margin-left: 300px;
+}
+
+
+/*footer的下边距没有用*/
+
+footer{
+    text-align: center;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,103 @@
+/*浏览器重置*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*设置页面最小宽高*/
+
+body {
+    min-width: 650px;
+    min-height: 410px;
+    line-height: 1.5em;
+}
+
+/*将padding-bottom:9999px后多余的部分进行隐藏*/
+.wrapper {
+    overflow: hidden;
+}
+
+header {
+    margin-bottom: 5px;
+    height: 30px;
+    background: #F4F4F4;
+}
+
+header h3 {
+    /*设置line-height高度和父元素相同，使文本垂直居中*/
+    line-height: 30px;
+    /*水平居中*/
+    text-align: center;
+}
+
+nav,
+aside {
+    background: #E9E9E9;
+}
+
+
+/*设置主体左中右三部分都向左浮动*/
+
+nav,
+article,
+aside {
+    float: left;
+}
+
+nav {
+    width: 200px;
+    /*设置负左边距使其向上移动，-100%即移动到上一行相同位置*/
+    margin-left: -100%;
+    /*对左中右三栏进行等高处理：一个下负外边距加一个下正内边距
+    使得footer的位置不变，但多出了下padding之后在wrapper中
+    使用overflow:hidden隐藏*/
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+
+/*取消列表项样式*/
+
+ul {
+    list-style-type: none;
+}
+
+aside {
+    width: 150px;
+    /*设置负左边距使其向上移动，-150px即向左移动自己的宽度，
+    会移出浏览器边界以至于移到上一行右边*/
+    margin-left: -150px;
+    /*对左中右三栏进行等高处理：一个下负外边距加一个下正内边距
+    使得footer的位置不变，但多出了下padding之后在wrapper中
+    使用overflow:hidden隐藏*/
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+article {
+    /*设置中间正文部分左右边距，为左右边栏腾出位置*/
+    margin: auto 155px auto 205px;
+    background: #F4F4F4;
+    /*min-height: 410px;*/
+    /*对左中右三栏进行等高处理：一个下负外边距加一个下正内边距
+    使得footer的位置不变，但多出了下padding之后在wrapper中
+    使用overflow:hidden隐藏*/
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+
+/*段首缩进*/
+
+p {
+    text-indent: 2em;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <style type="text/css">
+    div {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .relative {
+        background-color: orange;
+        display: inline-block;
+        position: relative;
+        left: 50px;
+        top: 100px;
+    }
+    
+    .absolute {
+        background-color: green;
+        display: inline-block;
+    }
+    .outer{
+    	height: 300px;
+    	width: 300px;
+    	background-color: aquamarine;
+    	/*float: left;*/
+    	display: inline-block;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="relative">
+        </div>
+    </div>
+    <div class="absolute">
+    </div>
+</body>
+
+</html>

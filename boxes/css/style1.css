@@ -1,0 +1,44 @@
+* {
+        margin: 0;
+        padding: 0;
+    }
+    /*标准盒模型*/
+    /*多用于PC端*/
+    /*由内而外的过程。相当于先造鞋子再（围着鞋子）造盒子（即不用考虑鞋盒padding
+    和border对盒内空间的影响），鞋的宽高与盒的宽高设定一样，之后
+    再设定盒的padding时会自动向外扩展盒子大小*/
+    
+    .shoe1 {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+    }
+    
+    .box1 {
+        margin: 100px;
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border: 5px solid red;
+    }
+    /*怪异盒模型*/
+    /*多用于桌面端*/
+    /*由外而内的过程。相当于先造好盒子再造（放）鞋子，需事先通过考虑鞋盒的padding
+    和border对盒内空间的影响来确定鞋盒的宽高*/
+    
+    .shoe2 {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+    }
+    
+    .box2 {
+        margin: 50px 100px;
+        padding: 10px;
+        width: 130px;
+        height: 130px;
+        background-color: aqua;
+        border: 5px solid red;
+        box-sizing: border-box; /*怪异盒模型，css3属性*/
+    }

@@ -1,0 +1,12 @@
+#yellow{
+	box-sizing: border-box;
+}
+#yellow div span{
+	width: 80px;
+	height: 80px;
+	background: yellow;
+	margin: 1px;
+	display: inline-block;
+	border-radius: 9px;
+}
+

@@ -1,0 +1,73 @@
+body {
+    font: 12px arial;
+}
+
+header {
+    overflow: hidden;
+}
+
+header nav {
+    /*width: 400px;*/
+    float: right;
+}
+
+header nav a {
+    margin-left: 15px;
+    color: black;
+}
+
+header nav a:hover {
+    color: blue;
+}
+
+.down_list {
+    display: none;
+}
+
+.top_menu li:hover ul {
+    display: block;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+article {
+    text-align: center;
+}
+
+article img {
+    width: 270px;
+    height: 129px;
+}
+
+article input {
+    width: 540px;
+    height: 36px;
+}
+
+img,
+form {
+    margin-top: 15px;
+}
+
+article button {
+    width: 100px;
+    height: 40px;
+    background-color: #3385FF;
+    border: 0;
+    color: white;
+}
+
+.baidu {
+    font-size: 17px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+footer p {
+    text-align: center;
+}

@@ -1,0 +1,176 @@
+    /*水平分栏*/
+    div.content1 {
+    /*只设display: -webkit-flex;而不设.first .second和
+	.third内-webkit-flex:1;时第一个div并不会延伸占满多余
+	的宽度啊？和老师演示的不一样*/
+    display: -webkit-box;
+    /*最外层声明，使得盒子成为弹性盒子*/
+    background-color: orange;
+    width: 400px;
+    height: 600px;
+    /*-webkit-box-orient: vertical;*//*垂直弹性布局*/
+    float: left;
+}
+
+.first1 {
+    background-color: cyan;
+    height: 100px;
+    -webkit-box-flex: 1;
+    /*占比n分之一*/
+}
+
+.second1 {
+    background-color: red;
+    height: 100px;
+    -webkit-box-flex: 1;
+}
+
+.third1 {
+    background-color: yellow;
+    height: 150px;
+    -webkit-box-flex: 1;
+}
+/*垂直分栏及排序*/
+div.content2 {
+    display: -webkit-box;
+    background-color: orange;
+    width: 400px;
+    height: 600px; /*垂直布局时需要显示声明一个高度*/
+    -webkit-box-orient: vertical; /*垂直弹性布局*/
+    float: left;
+    margin-left: 5px;
+}
+
+.first2 {
+    background-color: cyan;
+    height: 100px;
+    -webkit-box-flex: 1;
+    /*占比n分之一*/
+}
+
+.second2 {
+    background-color: red;
+    height: 100px;
+    -webkit-box-flex: 1;
+    -webkit-box-ordinal-group: 3;
+}
+
+.third2 {
+    background-color: yellow;
+    height: 100px;
+    -webkit-box-flex: 1;
+}
+
+div.center {
+    width: 300px;
+    height: 300px;
+    background-color: cyan;
+    display: -webkit-box;
+    -webkit-box-pack: center; /*水平居中*/
+    -webkit-box-align: center; /*垂直居中*/
+    float: left;
+    margin-left: 5px;
+}
+/*居中布局*/
+.title{
+	display: -webkit-box;
+	width: 1300px;
+}
+
+.title1, .title2, .title3{
+	-webkit-box-flex: 1;
+}
+
+/*column分栏*/
+.col {
+	clear: both; /*清除float*/
+    -webkit-columns: 4; /*分栏数量*/
+    -webkit-column-gap: 32px; /*分栏间隔*/
+    -webkit-column-rule-style: double; /*分栏样式*/
+}
+
+.column {
+	margin-top: 30px; /*为什么这个margin没有用啊？*/
+	clear: both;
+}
+
+img {
+    width: 150px;
+}
+
+/*标准盒模型和怪异盒模型的对比*/
+/*标准盒模型*/
+    /*多用于PC端*/
+    /*由内而外的过程。相当于先造鞋子再（围着鞋子）造盒子（即不用考虑鞋盒padding
+    和border对盒内空间的影响），鞋的宽高与盒的宽高设定一样，之后
+    再设定盒的padding时会自动向外扩展盒子大小*/
+    
+    .shoe1 {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+    }
+    
+    .box1 {
+        margin: 100px;
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border: 5px solid red;
+    }
+    /*怪异盒模型*/
+    /*多用于桌面端*/
+    /*由外而内的过程。相当于先造好盒子再造（放）鞋子，需事先通过考虑鞋盒的padding
+    和border对盒内空间的影响来确定鞋盒的宽高*/
+    
+    .shoe2 {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+    }
+    
+    .box2 {
+        margin: 50px 100px;
+        padding: 10px;
+        width: 130px;
+        height: 130px;
+        background-color: aqua;
+        border: 5px solid red;
+        box-sizing: border-box; /*怪异盒模型，css3属性*/
+    }
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
