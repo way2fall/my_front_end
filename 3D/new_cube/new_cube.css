@@ -54,59 +54,68 @@
 .cube>div {
     position: absolute;
 }
-.cube{
-	-webkit-perspective: 552;
-	margin: 200px;
-	-webkit-transform-style: preserve-3d;
-	-webkit-animation-name: animation;
-	-webkit-animation-timing-function: ease-in-out;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-duration: 3s;
-	-webkit-transform-style: preserve-3d;
-	-webkit-transform-origin: 80px 80px 0;
+
+.cube {
+	/*设置视距，使得正方体有立体感*/
+    /*-webkit-perspective: 1000;*/
+    margin: 200px;
+    /*变换样式设为preserve-3d,使子元素在3d空间中呈现*/
+    -webkit-transform-style: preserve-3d;
+    /*设置动画为animation*/
+    -webkit-animation-name: animation;
+    /*设置动画的速度曲线为ease-in-out（以低速开始和结束）*/
+    -webkit-animation-timing-function: ease-in-out;
+    /*设定动画播放次数为无限次*/
+    -webkit-animation-iteration-count: infinite;
+    /*定义动画完成一个周期所需要的时间*/
+    -webkit-animation-duration: 3s;
+    /*定义动画旋转基点*/
+    -webkit-transform-origin: 80px 80px 0;
 }
 
-.wrapper{
-	/*-webkit-perspective: 552;
-	margin: 200px;
-	-webkit-transform-style: preserve-3d;
-	-webkit-animation-name: animation;
-	-webkit-animation-timing-function: ease-in-out;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-duration: 3s;
-	-webkit-transform-style: preserve-3d;
-	-webkit-transform-origin: 80px 80px 0;*/
+
+/*定义动画animation的关键帧*/
+@-webkit-keyframes animation {
+    from,
+    to {}
+    16% {
+        -webkit-transform: rotateY(-90deg);
+    }
+    33% {
+        -webkit-transform: rotateY(-90deg) rotateZ(135deg);
+    }
+    50% {
+        -webkit-transform: rotateY(225deg) rotateZ(225deg);
+    }
+    66% {
+        -webkit-transform: rotateY(135deg) rotateZ(135deg);
+    }
+    83% {
+        -webkit-transform: rotateY(135deg);
+    }
 }
 
-@-webkit-keyframes animation{
-	from,to{}
-	16%{-webkit-transform:rotateY(-90deg);}
-	33%{-webkit-transform:rotateY(-90deg) rotateZ(135deg);}
-	50%{-webkit-transform:rotateY(225deg) rotateZ(225deg);}
-	66%{-webkit-transform:rotateY(135deg) rotateZ(135deg);}
-	83%{-webkit-transform:rotateY(135deg);}
+/*设置每个面旋转平移的位置，使构成一个正方体*/
+#front {
+    -webkit-transform: translateZ(123px);
 }
 
-#front{
-	-webkit-transform: translateZ(123px);
+#back {
+    -webkit-transform: translateZ(-123px);
 }
 
-#back{
-	-webkit-transform: translateZ(-123px);
+#left {
+    -webkit-transform: rotateY(90deg) translateZ(-123px);
 }
 
-#left{
-	-webkit-transform: rotateY(90deg) translateZ(-123px);
+#right {
+    -webkit-transform: rotateY(90deg) translateZ(123px);
 }
 
-#right{
-	-webkit-transform: rotateY(90deg) translateZ(123px);
+#up {
+    -webkit-transform: rotateX(90deg) translateZ(123px);
 }
 
-#up{
-	-webkit-transform: rotateX(90deg) translateZ(123px);
-}
-
-#down{
-	-webkit-transform: rotateX(90deg) translateZ(-123px);
+#down {
+    -webkit-transform: rotateX(90deg) translateZ(-123px);
 }
