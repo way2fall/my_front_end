@@ -56,9 +56,16 @@
 }
 
 .cube {
+    /*使方块居中*/
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    margin-top:-100px;   
+    margin-left:-100px;
 	/*设置视距，使得正方体有立体感*/
     /*-webkit-perspective: 1000;*/
-    margin: 200px;
     /*变换样式设为preserve-3d,使子元素在3d空间中呈现*/
     -webkit-transform-style: preserve-3d;
     /*设置动画为animation*/
