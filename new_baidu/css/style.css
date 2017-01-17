@@ -332,6 +332,10 @@ p.desc_1 {
 .down_in2 {
     margin-left: 20px;
     margin-top: -12px;
+    /*ie8,9,10风云榜位置进行微调*/
+    margin-top: -24px\0;
+    /*无法单独实现firefox中风云榜位置的微调*/
+    /*margin-top: 10px;*/
     float: left;
     color: black;
 }
