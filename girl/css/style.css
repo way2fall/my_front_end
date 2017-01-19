@@ -1,0 +1,170 @@
+    .girl {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    margin: -100px;
+    /*动画效果*/
+    -webkit-animation: animation 1s linear infinite;
+    -moz-animation: animation 1s linear infinite;
+}
+
+.head {
+    position: relative;
+    width: 480px;
+    height: 350px;
+    border: 3px solid;
+    border-radius: 50%;
+    background: black;
+}
+
+.face {
+    width: 400px;
+    height: 300px;
+    border-radius: 50%;
+    background: white;
+    -webkit-transform: translateX(40px) translateY(50px);
+    -moz-transform: translateX(40px) translateY(50px);
+}
+
+.eye div {
+    width: 90px;
+    height: 0px;
+    border: 3px solid;
+}
+
+.eye .left {
+    -webkit-transform: translate(40px, 140px) rotate(15deg);
+    -moz-transform: translate(40px, 140px) rotate(15deg);
+}
+
+.eye .right {
+    -webkit-transform: translate(270px, 140px) rotate(165deg);
+    -moz-transform: translate(270px, 140px) rotate(165deg);
+}
+
+.teeth .left {
+    width: 80px;
+    height: 40px;
+    border: 5px solid;
+    -webkit-transform: translate(40px, 200px);
+    -moz-transform: translate(40px, 200px);
+    border-bottom-left-radius: 100%;
+}
+
+.teeth .mid-left {
+    border: 5px solid;
+    -webkit-transform: translate(125px, 150px);
+    -moz-transform: translate(125px, 150px);
+    width: 60px;
+    height: 40px
+}
+
+.teeth .mid-right {
+    border: 5px solid;
+    -webkit-transform: translate(190px, 100px);
+    -moz-transform: translate(190px, 100px);
+    width: 60px;
+    height: 40px;
+}
+
+.teeth .right {
+    width: 80px;
+    height: 40px;
+    border: 5px solid;
+    -webkit-transform: translate(255px, 50px);
+    -moz-transform: translate(255px, 50px);
+    border-bottom-right-radius: 100%;
+}
+
+.eyebrow .left {
+    width: 100px;
+    height: 30px;
+    float: left;
+    border-radius: 50%;
+    box-shadow: -10px -20px black;
+    -webkit-transform: translate(50px, 50px);
+    -moz-transform: translate(50px, 50px);
+}
+
+.eyebrow .right {
+    width: 100px;
+    height: 30px;
+    float: left;
+    border-radius: 50%;
+    box-shadow: -10px -20px black;
+    -webkit-transform: translate(160px, 53px);
+    -moz-transform: translate(160px, 53px);
+}
+
+.left_hair {
+    width: 150px;
+    height: 170px;
+    background: black;
+    border-radius: 50%;
+    border: 1px solid;
+    -webkit-transform: translateX(370px) translateY(250px) rotate(135deg);
+    -moz-transform: translateX(370px) translateY(250px) rotate(135deg);
+    -webkit-transform: translateX(370px) translateY(250px) rotate(135deg);
+    -moz-transform: translateX(370px) translateY(250px) rotate(135deg);
+}
+
+.right_hair {
+    width: 150px;
+    height: 170px;
+    background: black;
+    border-radius: 50%;
+    border: 1px solid;
+    -webkit-transform: translateX(-20px) translateY(70px) rotate(45deg);
+    -moz-transform: translateX(-20px) translateY(70px) rotate(45deg);
+}
+
+.body .clothes {
+    width: 250px;
+    height: 200px;
+    border: 100px solid;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: black;
+    border-top: none;
+    -webkit-transform: translateX(20px) translateY(-200px);
+    -moz-transform: translateX(20px) translateY(-200px);
+}
+
+
+/*动画关键帧*/
+
+@-webkit-keyframes animation {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    25% {
+        -webkit-transform: rotate(-30deg)
+    }
+    50% {
+        -webkit-transform: rotate(0deg)
+    }
+    75% {
+        -webkit-transform: rotate(30deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes animation {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    25% {
+        -webkit-transform: rotate(-30deg)
+    }
+    50% {
+        -webkit-transform: rotate(0deg)
+    }
+    75% {
+        -webkit-transform: rotate(30deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
