@@ -1,0 +1,150 @@
+/*头部区域*/
+
+header {
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    background: #cf3;
+    position: relative;
+}
+
+header .logo img{
+	width: 109px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	top: 10px;
+}
+
+header nav{
+	width: 385px;
+	height: 60px;
+	position: absolute;
+	/*top: 20px;*/
+	line-height: 60px;
+	left: 169px;
+	display: block;
+}
+
+header nav a{
+	margin-right: 30px;
+}
+
+span.search-icon{
+	background: url(images/search-icon.png) 0 0 no-repeat;
+}
+/*头部区域 end*/
+
+
+/*轮播图区域*/
+
+div.banner {
+    width: 1000px;
+    height: 330px;
+    margin: 20px auto;
+    background: #0cf;
+}
+
+
+/*轮播图区域 end*/
+
+
+/*课程区域*/
+
+.courses {
+    width: 1000px;
+    height: 440px;
+    margin: 20px auto;
+    background: #fc9;
+}
+
+
+/*课程区域 end*/
+
+
+/*魔鬼程序员区域*/
+
+.mogv {
+    width: 1000px;
+    height: 310px;
+    margin: 20px auto;
+    background: #f2f4f6;
+}
+
+
+/*魔鬼程序员区域 end*/
+
+/*职业学院区域*/
+.college{
+	width: 1000px;
+	height: 310px;
+	margin: 20px auto;
+	background: #fc6;
+}
+
+/*职业学院区域 end*/
+
+/*会员课程区域*/
+.vip{
+	width: 1000px;
+	height: 420px;
+	margin: 20px auto;
+	background: #00b3e1;
+}
+/*会员课程区域 end*/
+
+/*学员故事区域*/
+.story{
+	width: 1000px;
+	height: 300px;
+	margin: 20px auto;
+	background: yellow;
+}
+/*学员故事区域 end*/
+
+
+/*合作企业区域*/
+.partner{
+	width: 1000px;
+	height: 240px;
+	margin: 20px auto;
+	background: red;
+}
+/*合作企业区域 end*/
+
+/*底部区域*/
+footer{
+	width: 1000px;
+	height: 299px;
+	margin: 20px auto;
+	background: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
